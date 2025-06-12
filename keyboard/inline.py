@@ -10,7 +10,7 @@ inline_games  = InlineKeyboardMarkup(
     ])
 
 inline_language = InlineKeyboardMarkup(
-    inline_keyboard= [
+    inline_keyboard= [ 
         [
             InlineKeyboardButton(text='Руский', callback_data='rus')
         ]
