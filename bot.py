@@ -38,6 +38,7 @@ async def main():
         logging.FileHandler('aiologs_mini.log', encoding='utf-8')
     ]
     )       
+    
     await bot.delete_webhook(drop_pending_updates=True)
     await bot.set_my_commands(commands = commands, scope=types.BotCommandScopeAllPrivateChats())
     await dp.start_polling(bot, allowed_updates=ALLOWED_UPDATES)
